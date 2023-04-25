@@ -1,0 +1,16 @@
+In simulation folder, after installing all the prerequisite asked by ARGoS, start by executing the following:
+$ mkdir build && cd build
+
+The following commands are to be repeated everytime there is a change with the code, except when the change is in .argos, where only the last of those commands need to be executed:
+to build code that is debuggable 
+$ cmake -DCMAKE_BUILD_TYPE=Debug ..
+to build code in release mode (quicker compilation)
+$ cmake -DCMAKE_BUILD_TYPE=Release .. 
+
+if not in "build" folder, go there first.
+$ make -j $(nproc)
+$ cd ..
+$ argos3 -c experiments/crazyflie_sensing.argos
+
+if in the folder "simulation" and folder "build" is already existing, this command will do it all at once:
+$ cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make -j $(nproc) && cd .. ; argos3 -c experiments/crazyflie_sensing.argos
