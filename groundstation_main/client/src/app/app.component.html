@@ -1,0 +1,56 @@
+<p>
+  <mat-toolbar color="primary">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->
+    <h1>INF3995 - Equipe 101 - Interface Client</h1>
+  </mat-toolbar>
+</p>
+
+<div class="container">
+  <app-sidebar class="sidebar"></app-sidebar>
+  <div>
+    
+    <section>
+      <div class="example-button-row">
+        <button mat-raised-button id="scan" (click)="searchDrones()">Scan</button>
+      </div>
+    </section>
+    
+    <section>
+      <div class="example-button-row">
+          <button mat-raised-button id="explore" color="accent" (click)="launchMissionDrone()">Lancer la mission</button>
+      </div>
+    </section>
+    
+    <section>
+      <div class="example-button-row">
+          <button mat-raised-button id="land" color="warn" (click)="endMissionDrone()">Terminer la mission</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="example-button-row">
+          <button mat-raised-button id="returntobase" color="projetcolor" (click)="returnToBase()">Retour a la base</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="example-button-row">
+          <button mat-raised-button color="accent" (click)="openDialog()">Journal de débogage</button>
+      </div>
+    </section>
+  </div>
+  <app-mapbox class="mapbox"></app-mapbox>
+</div>
+<!-- #E2F8BE -->
+
+<!-- Angular material -->

@@ -1,0 +1,39 @@
+// @use '@angular/material' as mat;
+// @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+// $my-palette: mat.$indigo-palette;
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+.example-button-row .mat-button-base {
+margin: 8px 8px 8px 0;
+}
+
+
+.example-spacer {
+flex: 1 1 auto;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  margin-right: 10px;
+  padding: 0 5px 0 5px;
+  // background-color: #AAF0E3; // Couleur de sidebar
+}
+
+.mapbox {
+  padding: 0 5px 0 5px;
+  height: 400px;
+  width: 400px;
+  // background-color: #AAF0E3;
+}
+
+.mat-projetcolor {
+  background-color: #E2F8BE;
+}

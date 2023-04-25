@@ -1,0 +1,10 @@
+.container {
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+}
+
+#mapCanvas {
+    border: 2px solid #000000;
+    z-index: 0;
+}

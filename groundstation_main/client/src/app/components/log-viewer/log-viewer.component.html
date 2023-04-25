@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+    <mat-selection-list #logs [multiple]="false">
+        <mat-list-option *ngFor="let log of logNameArray" [value]="log" (click)="fetchLog(log)">
+            {{log}}
+        </mat-list-option>
+    </mat-selection-list>
+
+    <div id="textContainer">
+        <embed id="text" #textdisp src="" type="text/plain">
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="section">
+        <p>Adresse</p>
+        {{ address }}
+    </div>
+    <div class="section">
+        <p>État</p>
+        {{ state }}
+    </div>
+    <div class="section">
+        <p>Batterie</p>
+            <!-- {{ drone_battery_level }} -->
+            <mat-progress-spinner
+            class="example-margin"
+            [color]="color"
+            [mode]="mode"
+            [diameter]="40"
+            [value]="drone_battery_level">
+        </mat-progress-spinner>
+        <div style="position:relative; top: -25px; left: 8px;">{{ drone_battery_level }} %</div>
+    </div>
+    <div class="section">
+        <p>Temps</p>
+        {{ timestamp }}
+    </div>
+
+    <div class="section">
+        <p>Identifier</p>
+        <div class="example-button-row">
+            <button mat-raised-button id="identifyonedrone" color="primary" (click)="identifyDrone()">Identifier</button>
+        </div>
+    </div>
+</div>

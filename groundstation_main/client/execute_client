@@ -1,0 +1,1 @@
+sudo docker run -it --rm -p 9898:4200 --name client-container client-app

@@ -1,0 +1,6 @@
+<p class="title">Maps des drones</p>
+<mat-divider></mat-divider>
+<div *ngFor="let address of getAddresses()" >
+    <app-drone-map [addressNumber]="address" [address]="address.toString(16).toUpperCase()"></app-drone-map>
+    <mat-divider></mat-divider>
+</div>
